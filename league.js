@@ -46,7 +46,6 @@ class League {
     }
 
     toString() {
-        this.getLeageStatistics() ;
         let games = "Games: \n" + this.gameStat.map(game => game.result + " \n").join("");
         let gameStat = "Team Stats: \n" + this.getLeageStatistics();
         let output = games + " \n" + gameStat;
